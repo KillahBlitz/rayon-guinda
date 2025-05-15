@@ -1,0 +1,6 @@
+@APIrestRayonGuinda_HostAddress = http://localhost:5263
+
+GET {{APIrestRayonGuinda_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

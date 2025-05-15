@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\APIrestRayonGuinda.props" />
+</Project>
