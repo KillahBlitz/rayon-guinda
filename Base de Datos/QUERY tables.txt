@@ -1,0 +1,123 @@
+CREATE TABLE Usuario (
+  User_ID int IDENTITY(1,1) PRIMARY KEY,
+  Apellido_Paterno varchar(255) NOT NULL,
+  Apellido_Materno varchar(255) NOT NULL,
+  Nombres varchar(255) NOT NULL,
+  Num_Boleta varchar(50) NOT NULL,
+  Fecha_Nacimiento date NOT NULL,
+  Correo_Institucional varchar(255) NOT NULL,
+  Contraseña varchar(255) NOT NULL
+);
+
+CREATE TABLE Participantes (
+  Index_user int IDENTITY(1,1) PRIMARY KEY,
+  Nombre_Completo varchar(255) NOT NULL,
+  Rol varchar(100) NOT NULL
+);
+
+CREATE TABLE Grupo (
+  Grupo_ID int IDENTITY(1,1) PRIMARY KEY,
+  Administrador varchar(255) NOT NULL,
+  Nombre_Grupo varchar(255) NOT NULL,
+  Clave_Acceso varchar(100) NOT NULL,
+  Num_Integrantes int NOT NULL
+);
+
+CREATE TABLE Foro (
+  Foro_ID int IDENTITY(1,1) PRIMARY KEY,
+  Administrador varchar(255) NOT NULL,
+  Nombre_Foro varchar(255) NOT NULL,
+  Num_Integrantes int NOT NULL
+);
+
+CREATE TABLE Publicacion (
+  Publicacion_ID int IDENTITY(1,1) PRIMARY KEY,
+  Autor_Publicacion varchar(255) NOT NULL,
+  Contenido_Publicacion text NOT NULL,
+  Fecha_Publicacion datetime NOT NULL
+);
+
+CREATE TABLE Comentario (
+  Comentario_ID int IDENTITY(1,1) PRIMARY KEY,
+  Autor_Comentario varchar(255) NOT NULL,
+  Contenido_Comentario text NOT NULL,
+  Publicacion_ID int NOT NULL,
+  FOREIGN KEY (Publicacion_ID) REFERENCES Publicacion(Publicacion_ID)
+);
+
+CREATE TABLE Tarea (
+  Tarea_ID int IDENTITY(1,1) PRIMARY KEY,
+  Autor_Publicacion varchar(255) NOT NULL,
+  Contenido_Publicacion text NOT NULL,
+  Fecha_Publicacion datetime NOT NULL,
+  Calificar int NOT NULL
+);
+
+CREATE TABLE Archivo (
+  Archivo_ID int IDENTITY(1,1) PRIMARY KEY,
+  Alumno_Responsable varchar(255) NOT NULL,
+  Peso_Archivo int NOT NULL,
+  Fecha_Publicacion datetime NOT NULL
+);
+
+CREATE TABLE Calificacion (
+  Calificacion_ID int IDENTITY(1,1) PRIMARY KEY,
+  Alumno_Calificacion varchar(255) NOT NULL,
+  Calificacion int NOT NULL
+);
+
+CREATE TABLE Chat (
+  Chat_ID int IDENTITY(1,1) PRIMARY KEY,
+  Other_user varchar(255) NOT NULL,
+  Content text NOT NULL
+);
+
+-- Tablas de relación
+
+CREATE TABLE Usuario_Foro (
+  User_ID int NOT NULL,
+  Foro_ID int NOT NULL,
+  PRIMARY KEY (User_ID, Foro_ID),
+  FOREIGN KEY (User_ID) REFERENCES Usuario(User_ID),
+  FOREIGN KEY (Foro_ID) REFERENCES Foro(Foro_ID)
+);
+
+CREATE TABLE Publicacion_Foro (
+  Publicacion_ID int NOT NULL,
+  Foro_ID int NOT NULL,
+  PRIMARY KEY (Publicacion_ID, Foro_ID),
+  FOREIGN KEY (Publicacion_ID) REFERENCES Publicacion(Publicacion_ID),
+  FOREIGN KEY (Foro_ID) REFERENCES Foro(Foro_ID)
+);
+
+CREATE TABLE Usuario_Grupo (
+  User_ID int NOT NULL,
+  Grupo_ID int NOT NULL,
+  PRIMARY KEY (User_ID, Grupo_ID),
+  FOREIGN KEY (User_ID) REFERENCES Usuario(User_ID),
+  FOREIGN KEY (Grupo_ID) REFERENCES Grupo(Grupo_ID)
+);
+
+CREATE TABLE Usuario_Chat (
+  User_ID int NOT NULL,
+  Chat_ID int NOT NULL,
+  PRIMARY KEY (User_ID, Chat_ID),
+  FOREIGN KEY (User_ID) REFERENCES Usuario(User_ID),
+  FOREIGN KEY (Chat_ID) REFERENCES Chat(Chat_ID)
+);
+
+CREATE TABLE Archivo_Tarea (
+  Calificacion_ID int NOT NULL,
+  Tarea_ID int NOT NULL,
+  PRIMARY KEY (Calificacion_ID, Tarea_ID),
+  FOREIGN KEY (Calificacion_ID) REFERENCES Calificacion(Calificacion_ID),
+  FOREIGN KEY (Tarea_ID) REFERENCES Tarea(Tarea_ID)
+);
+
+CREATE TABLE Calificacion_Tarea (
+  Calificacion_ID int NOT NULL,
+  Tarea_ID int NOT NULL,
+  PRIMARY KEY (Calificacion_ID, Tarea_ID),
+  FOREIGN KEY (Calificacion_ID) REFERENCES Calificacion(Calificacion_ID),
+  FOREIGN KEY (Tarea_ID) REFERENCES Tarea(Tarea_ID)
+);
