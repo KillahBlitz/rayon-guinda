@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RayonGuinda.Operaciones
 {
-    internal class UsuarioDAO
+    public class UsuarioDAO
     {
     }
 }
