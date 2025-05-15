@@ -3,60 +3,8 @@
   "WorkspaceRootPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\tareadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\tareadao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\publicaciondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\publicaciondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\participantedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\participantedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\archivodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\archivodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\models\\tareamodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\models\\tareamodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\models\\grupomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\models\\grupomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\models\\chatmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\models\\chatmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\models\\comentariomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\models\\comentariomodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\models\\foromodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\models\\foromodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\models\\publicacionmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\models\\publicacionmodelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\grupodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\grupodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\comentariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\comentariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\calificacaiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\calificacaiondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\pruebasdebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|solutionrelative:pruebasdebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,186 +14,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TareaModelo.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\TareaModelo.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Models\\TareaModelo.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\TareaModelo.cs",
-              "RelativeToolTip": "RayonGuinda\\Models\\TareaModelo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T18:14:52.247Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GrupoModelo.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\GrupoModelo.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Models\\GrupoModelo.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\GrupoModelo.cs",
-              "RelativeToolTip": "RayonGuinda\\Models\\GrupoModelo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:16:06.106Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioDAO.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
+              "RelativeDocumentMoniker": "PruebasdeBackend\\Program.cs",
+              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
+              "RelativeToolTip": "PruebasdeBackend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T04:41:38.862Z",
+              "WhenOpened": "2025-05-15T21:33:19.297Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TareaDAO.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\TareaDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\TareaDAO.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\TareaDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\TareaDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T04:41:23.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PublicacionDAO.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\PublicacionDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\PublicacionDAO.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\PublicacionDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\PublicacionDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T04:41:04.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ArchivoDAO.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\ArchivoDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\ArchivoDAO.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\ArchivoDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\ArchivoDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T04:38:25.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ParticipanteDAO.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\ParticipanteDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\ParticipanteDAO.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\ParticipanteDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\ParticipanteDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T04:40:48.979Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PublicacionModelo.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\PublicacionModelo.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Models\\PublicacionModelo.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\PublicacionModelo.cs",
-              "RelativeToolTip": "RayonGuinda\\Models\\PublicacionModelo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:15:29.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ForoModelo.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\ForoModelo.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Models\\ForoModelo.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\ForoModelo.cs",
-              "RelativeToolTip": "RayonGuinda\\Models\\ForoModelo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:16:10.806Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ComentarioModelo.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\ComentarioModelo.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Models\\ComentarioModelo.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\ComentarioModelo.cs",
-              "RelativeToolTip": "RayonGuinda\\Models\\ComentarioModelo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:16:29.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ChatModelo.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\ChatModelo.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Models\\ChatModelo.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\ChatModelo.cs",
-              "RelativeToolTip": "RayonGuinda\\Models\\ChatModelo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T20:16:37.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GrupoDAO.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\GrupoDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\GrupoDAO.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\GrupoDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\GrupoDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T04:40:20.164Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ComentarioDAO.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\ComentarioDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\ComentarioDAO.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\ComentarioDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\ComentarioDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T04:39:42.617Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CalificacaionDAO.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\CalificacaionDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\CalificacaionDAO.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\CalificacaionDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\CalificacaionDAO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-14T04:39:02.388Z"
             }
           ]
         }

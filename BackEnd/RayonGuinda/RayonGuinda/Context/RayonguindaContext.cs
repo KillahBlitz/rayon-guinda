@@ -16,33 +16,33 @@ public partial class RayonguindaContext : DbContext
     {
     }
 
-    public virtual DbSet<ArchivoModelo> Archivos { get; set; }
+    public virtual DbSet<ArchivoModel> Archivos { get; set; }
 
-    public virtual DbSet<CalificacionModelo> Calificacions { get; set; }
+    public virtual DbSet<CalificacionModel> Calificacions { get; set; }
 
-    public virtual DbSet<ChatModelo> Chats { get; set; }
+    public virtual DbSet<ChatModel> Chats { get; set; }
 
-    public virtual DbSet<ComentarioModelo> Comentarios { get; set; }
+    public virtual DbSet<ComentarioModel> Comentarios { get; set; }
 
-    public virtual DbSet<ForoModelo> Foros { get; set; }
+    public virtual DbSet<ForoModel> Foros { get; set; }
 
-    public virtual DbSet<GrupoModelo> Grupos { get; set; }
+    public virtual DbSet<GrupoModel> Grupos { get; set; }
 
-    public virtual DbSet<ParticipanteModelo> Participantes { get; set; }
+    public virtual DbSet<ParticipanteModel> Participantes { get; set; }
 
-    public virtual DbSet<PublicacionModelo> Publicacions { get; set; }
+    public virtual DbSet<PublicacionModel> Publicacions { get; set; }
 
-    public virtual DbSet<TareaModelo> Tareas { get; set; }
+    public virtual DbSet<TareaModel> Tareas { get; set; }
 
-    public virtual DbSet<UsuarioModelo> Usuarios { get; set; }
+    public virtual DbSet<UsuarioModel> Usuarios { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS01;Database=RAYONGUINDA;Trust Server Certificate=true;User Id=Amon;Password=Amon1771;MultipleActiveResultSets=true");
+        => optionsBuilder.UseSqlServer("Server=DEWKAT\\SQLEXPRESS;Database=RAYONGUINDA;Trust Server Certificate=true;User Id=Admin;Password=admin;MultipleActiveResultSets=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<ArchivoModelo>(entity =>
+        modelBuilder.Entity<ArchivoModel>(entity =>
         {
             entity.HasKey(e => e.ArchivoId).HasName("PK__Archivo__E5AC051F0605F552");
 
@@ -59,7 +59,7 @@ public partial class RayonguindaContext : DbContext
             entity.Property(e => e.PesoArchivo).HasColumnName("Peso_Archivo");
         });
 
-        modelBuilder.Entity<CalificacionModelo>(entity =>
+        modelBuilder.Entity<CalificacionModel>(entity =>
         {
             entity.HasKey(e => e.CalificacionId).HasName("PK__Califica__146BB23EC50181B5");
 
@@ -75,11 +75,11 @@ public partial class RayonguindaContext : DbContext
             entity.HasMany(d => d.Tareas).WithMany(p => p.Calificacions)
                 .UsingEntity<Dictionary<string, object>>(
                     "ArchivoTarea",
-                    r => r.HasOne<TareaModelo>().WithMany()
+                    r => r.HasOne<TareaModel>().WithMany()
                         .HasForeignKey("TareaId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Archivo_T__Tarea__6E01572D"),
-                    l => l.HasOne<CalificacionModelo>().WithMany()
+                    l => l.HasOne<CalificacionModel>().WithMany()
                         .HasForeignKey("CalificacionId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Archivo_T__Calif__6D0D32F4"),
@@ -94,11 +94,11 @@ public partial class RayonguindaContext : DbContext
             entity.HasMany(d => d.TareasNavigation).WithMany(p => p.CalificacionsNavigation)
                 .UsingEntity<Dictionary<string, object>>(
                     "CalificacionTarea",
-                    r => r.HasOne<TareaModelo>().WithMany()
+                    r => r.HasOne<TareaModel>().WithMany()
                         .HasForeignKey("TareaId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Calificac__Tarea__71D1E811"),
-                    l => l.HasOne<CalificacionModelo>().WithMany()
+                    l => l.HasOne<CalificacionModel>().WithMany()
                         .HasForeignKey("CalificacionId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Calificac__Calif__70DDC3D8"),
@@ -111,7 +111,7 @@ public partial class RayonguindaContext : DbContext
                     });
         });
 
-        modelBuilder.Entity<ChatModelo>(entity =>
+        modelBuilder.Entity<ChatModel>(entity =>
         {
             entity.HasKey(e => e.ChatId).HasName("PK__Chat__9783B1FE4453F6A4");
 
@@ -125,7 +125,7 @@ public partial class RayonguindaContext : DbContext
                 .HasColumnName("Other_user");
         });
 
-        modelBuilder.Entity<ComentarioModelo>(entity =>
+        modelBuilder.Entity<ComentarioModel>(entity =>
         {
             entity.HasKey(e => e.ComentarioId).HasName("PK__Comentar__6551412944FA7B88");
 
@@ -147,7 +147,7 @@ public partial class RayonguindaContext : DbContext
                 .HasConstraintName("FK__Comentari__Publi__534D60F1");
         });
 
-        modelBuilder.Entity<ForoModelo>(entity =>
+        modelBuilder.Entity<ForoModel>(entity =>
         {
             entity.HasKey(e => e.ForoId).HasName("PK__Foro__FB62CCA3355C49F8");
 
@@ -164,7 +164,7 @@ public partial class RayonguindaContext : DbContext
             entity.Property(e => e.NumIntegrantes).HasColumnName("Num_Integrantes");
         });
 
-        modelBuilder.Entity<GrupoModelo>(entity =>
+        modelBuilder.Entity<GrupoModel>(entity =>
         {
             entity.HasKey(e => e.GrupoId).HasName("PK__Grupo__BE194F08DB4A143C");
 
@@ -185,7 +185,7 @@ public partial class RayonguindaContext : DbContext
             entity.Property(e => e.NumIntegrantes).HasColumnName("Num_Integrantes");
         });
 
-        modelBuilder.Entity<ParticipanteModelo>(entity =>
+        modelBuilder.Entity<ParticipanteModel>(entity =>
         {
             entity.HasKey(e => e.IndexUser).HasName("PK__Particip__0838B1DF216C7E01");
 
@@ -199,7 +199,7 @@ public partial class RayonguindaContext : DbContext
                 .IsUnicode(false);
         });
 
-        modelBuilder.Entity<PublicacionModelo>(entity =>
+        modelBuilder.Entity<PublicacionModel>(entity =>
         {
             entity.HasKey(e => e.PublicacionId).HasName("PK__Publicac__E3FEC052ECCCA370");
 
@@ -220,11 +220,11 @@ public partial class RayonguindaContext : DbContext
             entity.HasMany(d => d.Foros).WithMany(p => p.Publicacions)
                 .UsingEntity<Dictionary<string, object>>(
                     "PublicacionForo",
-                    r => r.HasOne<ForoModelo>().WithMany()
+                    r => r.HasOne<ForoModel>().WithMany()
                         .HasForeignKey("ForoId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Publicaci__Foro___628FA481"),
-                    l => l.HasOne<PublicacionModelo>().WithMany()
+                    l => l.HasOne<PublicacionModel>().WithMany()
                         .HasForeignKey("PublicacionId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Publicaci__Publi__619B8048"),
@@ -237,7 +237,7 @@ public partial class RayonguindaContext : DbContext
                     });
         });
 
-        modelBuilder.Entity<TareaModelo>(entity =>
+        modelBuilder.Entity<TareaModel>(entity =>
         {
             entity.HasKey(e => e.TareaId).HasName("PK__Tarea__327AB98A18E2ABB1");
 
@@ -256,7 +256,7 @@ public partial class RayonguindaContext : DbContext
                 .HasColumnName("Fecha_Publicacion");
         });
 
-        modelBuilder.Entity<UsuarioModelo>(entity =>
+        modelBuilder.Entity<UsuarioModel>(entity =>
         {
             entity.HasKey(e => e.UserId).HasName("PK__Usuario__206D9190B281C9D9");
 
@@ -290,11 +290,11 @@ public partial class RayonguindaContext : DbContext
             entity.HasMany(d => d.Chats).WithMany(p => p.Users)
                 .UsingEntity<Dictionary<string, object>>(
                     "UsuarioChat",
-                    r => r.HasOne<ChatModelo>().WithMany()
+                    r => r.HasOne<ChatModel>().WithMany()
                         .HasForeignKey("ChatId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Usuario_C__Chat___6A30C649"),
-                    l => l.HasOne<UsuarioModelo>().WithMany()
+                    l => l.HasOne<UsuarioModel>().WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Usuario_C__User___693CA210"),
@@ -309,11 +309,11 @@ public partial class RayonguindaContext : DbContext
             entity.HasMany(d => d.Foros).WithMany(p => p.Users)
                 .UsingEntity<Dictionary<string, object>>(
                     "UsuarioForo",
-                    r => r.HasOne<ForoModelo>().WithMany()
+                    r => r.HasOne<ForoModel>().WithMany()
                         .HasForeignKey("ForoId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Usuario_F__Foro___5EBF139D"),
-                    l => l.HasOne<UsuarioModelo>().WithMany()
+                    l => l.HasOne<UsuarioModel>().WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Usuario_F__User___5DCAEF64"),
@@ -328,11 +328,11 @@ public partial class RayonguindaContext : DbContext
             entity.HasMany(d => d.Grupos).WithMany(p => p.Users)
                 .UsingEntity<Dictionary<string, object>>(
                     "UsuarioGrupo",
-                    r => r.HasOne<GrupoModelo>().WithMany()
+                    r => r.HasOne<GrupoModel>().WithMany()
                         .HasForeignKey("GrupoId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Usuario_G__Grupo__66603565"),
-                    l => l.HasOne<UsuarioModelo>().WithMany()
+                    l => l.HasOne<UsuarioModel>().WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.ClientSetNull)
                         .HasConstraintName("FK__Usuario_G__User___656C112C"),

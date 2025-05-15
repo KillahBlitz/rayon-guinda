@@ -19,3 +19,5 @@ build_property.RootNamespace = RayonGuinda
 build_property.ProjectDir = D:\Windows 64\Documentos\GitHub\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
