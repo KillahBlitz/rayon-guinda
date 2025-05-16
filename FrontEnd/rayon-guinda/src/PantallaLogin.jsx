@@ -23,7 +23,7 @@ export function PantallaLogin(){
                         <Center>
                             <Box borderRadius='md' width='80%' id='caja' bg='#ffffff3e' color='white'>
                                 <Box textAlign='center'>
-                                    <Heading>Inicia Sesión</Heading>
+                                    <Heading>Inicia Sesión CINECLIC</Heading>
                                 </Box>
                                 <Box padding='20px'>
                                     <form id='login-form'>
