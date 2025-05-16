@@ -1,0 +1,10 @@
+Para el servidor
+//Servidor
+servidor-rayon-guinda
+//link de servidor
+tcp:rayon-guinda-servidor.database.windows.net,1433
+
+//Nombre del administrador
+AdminRayon
+//Contraseña
+esimeC23
