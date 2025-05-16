@@ -38,7 +38,7 @@ public partial class RayonguindaContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DEWKAT\\SQLEXPRESS;Database=RAYONGUINDA;Trust Server Certificate=true;User Id=Admin;Password=admin;MultipleActiveResultSets=true");
+        => optionsBuilder.UseSqlServer("Server=tcp:rayon-guinda-servidor.database.windows.net,1433;Database=rayonguindadb;Trust Server Certificate=true;User Id=AdminRayon;Password=esimeC23;MultipleActiveResultSets=true");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
