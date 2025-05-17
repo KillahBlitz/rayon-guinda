@@ -7,6 +7,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+//linea modificada para que no haya problemas cuando se hacen peticiones desde varios servidores
+builder.Services.AddCors(policyBuilder => policyBuilder.AddDefaultPolicy(policy => policy.WithOrigins("*").AllowAnyHeader().AllowAnyMethod()));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -15,6 +19,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//solucionando los problemas de bloqueos de seguridad
+app.UseCors();
 
 app.UseAuthorization();
 

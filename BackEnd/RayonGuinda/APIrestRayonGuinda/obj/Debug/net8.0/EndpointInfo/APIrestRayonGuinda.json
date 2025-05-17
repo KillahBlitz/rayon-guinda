@@ -1,0 +1,371 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "APIrestRayonGuinda",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/registro": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/login": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/recuperarpassword": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ChatModel": {
+        "type": "object",
+        "properties": {
+          "chatId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "otherUser": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UsuarioModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ComentarioModel": {
+        "type": "object",
+        "properties": {
+          "comentarioId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "autorComentario": {
+            "type": "string",
+            "nullable": true
+          },
+          "contenidoComentario": {
+            "type": "string",
+            "nullable": true
+          },
+          "publicacionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "publicacion": {
+            "$ref": "#/components/schemas/PublicacionModel"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ForoModel": {
+        "type": "object",
+        "properties": {
+          "foroId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "administrador": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreForo": {
+            "type": "string",
+            "nullable": true
+          },
+          "numIntegrantes": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "publicacions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PublicacionModel"
+            },
+            "nullable": true
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UsuarioModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GrupoModel": {
+        "type": "object",
+        "properties": {
+          "grupoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "administrador": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombreGrupo": {
+            "type": "string",
+            "nullable": true
+          },
+          "claveAcceso": {
+            "type": "string",
+            "nullable": true
+          },
+          "numIntegrantes": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "users": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UsuarioModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PublicacionModel": {
+        "type": "object",
+        "properties": {
+          "publicacionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "autorPublicacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "contenidoPublicacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaPublicacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "comentarios": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComentarioModel"
+            },
+            "nullable": true
+          },
+          "foros": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ForoModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioModel": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "apellidoPaterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "apellidoMaterno": {
+            "type": "string",
+            "nullable": true
+          },
+          "nombres": {
+            "type": "string",
+            "nullable": true
+          },
+          "numBoleta": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaNacimiento": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "correoInstitucional": {
+            "type": "string",
+            "nullable": true
+          },
+          "contraseña": {
+            "type": "string",
+            "nullable": true
+          },
+          "chats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChatModel"
+            },
+            "nullable": true
+          },
+          "foros": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ForoModel"
+            },
+            "nullable": true
+          },
+          "grupos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GrupoModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\context\\rayonguindacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\context\\rayonguindacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\pruebasdebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|solutionrelative:pruebasdebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\apirestrayonguinda\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|solutionrelative:apirestrayonguinda\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +31,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RayonguindaContext.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Context\\RayonguindaContext.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Context\\RayonguindaContext.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Context\\RayonguindaContext.cs",
-              "RelativeToolTip": "RayonGuinda\\Context\\RayonguindaContext.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAA8wCgAAAB5AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
+              "RelativeDocumentMoniker": "PruebasdeBackend\\Program.cs",
+              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs*",
+              "RelativeToolTip": "PruebasdeBackend\\Program.cs*",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAmwLoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T00:28:35.672Z",
+              "WhenOpened": "2025-05-17T06:54:52.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
-              "RelativeDocumentMoniker": "PruebasdeBackend\\Program.cs",
-              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
-              "RelativeToolTip": "PruebasdeBackend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
+              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
+              "RelativeToolTip": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAmwHUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:33:19.297Z",
+              "WhenOpened": "2025-05-17T06:06:10.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwBkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T06:32:48.414Z",
               "EditorCaption": ""
             }
           ]
