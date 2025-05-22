@@ -3232,23 +3232,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Akeshi\\.nuget\\packages\\": {},
-    "D:\\Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Wcruz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\APIrestRayonGuinda.csproj",
+      "projectUniqueName": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\APIrestRayonGuinda.csproj",
       "projectName": "APIrestRayonGuinda",
-      "projectPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\APIrestRayonGuinda.csproj",
-      "packagesPath": "C:\\Users\\Akeshi\\.nuget\\packages\\",
-      "outputPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\obj\\",
+      "projectPath": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\APIrestRayonGuinda.csproj",
+      "packagesPath": "C:\\Users\\Wcruz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Akeshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Wcruz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3263,8 +3263,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj": {
-              "projectPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj"
+            "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj": {
+              "projectPath": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj"
             }
           }
         }
@@ -3279,7 +3279,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -3309,7 +3309,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

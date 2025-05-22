@@ -38,3 +38,18 @@ D:\Windows 64\Documentos\GitHub\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj
 D:\Windows 64\Documentos\GitHub\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.pdb
 D:\Windows 64\Documentos\GitHub\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.genruntimeconfig.cache
 D:\Windows 64\Documentos\GitHub\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\ref\RayonGuinda.dll
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\bin\Debug\net8.0\RayonGuinda.deps.json
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\bin\Debug\net8.0\RayonGuinda.runtimeconfig.json
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\bin\Debug\net8.0\RayonGuinda.dll
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\bin\Debug\net8.0\RayonGuinda.pdb
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.csproj.AssemblyReference.cache
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.AssemblyInfoInputs.cache
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.AssemblyInfo.cs
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.csproj.CoreCompileInputs.cache
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.sourcelink.json
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.dll
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\refint\RayonGuinda.dll
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.pdb
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\RayonGuinda.genruntimeconfig.cache
+C:\Users\Wcruz\Desktop\rayon-guinda-main\rayon-guinda\BackEnd\RayonGuinda\RayonGuinda\obj\Debug\net8.0\ref\RayonGuinda.dll

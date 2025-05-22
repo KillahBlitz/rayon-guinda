@@ -5,15 +5,14 @@ using System.Collections.Concurrent;
 using System.Net;
 using System.Net.Mail;
 
-
 class Program
 {
     static void Main(string[] args)
     {
-        RecuperarPassword();
-    }
 
-    static void IngresarUsuario()
+        ModificarUsuario();
+    }
+    static void AltaUsuario()
     {
         try
         {
@@ -71,27 +70,21 @@ class Program
     {
         try
         {
-            Console.WriteLine("=== Confirmar Usuario ===");
-            Console.Write("Correo Electronico: ");
-            string correo = Console.ReadLine();
-            Console.Write("Contraseña: ");
+            Console.WriteLine("=== Confirma tu identidad ===");
+            Console.Write("Ingresa tu contraseña: ");
             string contrasena = Console.ReadLine();
             bool esValido = false;
             using var context = new RayonguindaContext();
-            var usuario = context.Usuarios.FirstOrDefault(u => u.CorreoInstitucional == correo);
-            
-            if (usuario.Contraseña == contrasena)
+            var usuario = context.Usuarios.FirstOrDefault();
+
+            if (usuario != null && usuario.Contraseña == contrasena)
             {
                 esValido = true;
             }
-            else
+
+            if (usuario != null && esValido == true)
             {
-                esValido = false;
-            }
-            
-            if (usuario != null && esValido== true)
-            {
-                Console.WriteLine($"Usuario encontrado: {usuario.Nombres} {usuario.ApellidoPaterno} {usuario.ApellidoMaterno}");
+                Console.WriteLine($"Perfil {usuario.Nombres} {usuario.ApellidoPaterno} {usuario.ApellidoMaterno}");
             }
             else
             {
@@ -103,110 +96,78 @@ class Program
             Console.WriteLine(e);
         }
     }
-
-    // Diccionario estático para almacenar tokens temporales
-    private static ConcurrentDictionary<string, (DateTime Expira, bool Usado)> tokens = new();
-    static void RecuperarPassword()
+    static void ModificarUsuario()
     {
         try
         {
-            Console.WriteLine("=== Recuperar Contraseña ===");
-            Console.Write("Correo Electronico: ");
+            Console.WriteLine("=== Modificar Usuario ===");
+
+            // Primero confirmar la identidad del usuario
+            Console.Write("Correo Electrónico: ");
             string correo = Console.ReadLine();
-            Console.Write("Fecha de Nacimiento (yyyy-MM-dd): ");
-            DateTime fecha;
-            while (!DateTime.TryParse(Console.ReadLine(), out fecha))
+            Console.Write("Contraseña: ");
+            string contrasena = Console.ReadLine();
+
+            using var context = new RayonguindaContext();
+            var usuario = context.Usuarios.FirstOrDefault(u => u.CorreoInstitucional == correo);
+
+            if (usuario == null || usuario.Contraseña != contrasena)
             {
-                Console.Write("Formato inválido. Intenta de nuevo (yyyy-MM-dd): ");
+                Console.WriteLine("Credenciales Incorrectas");
+                return;
             }
 
-            try
+            Console.WriteLine($"Perfil");
+
+            // Mostrar datos actuales y permitir modificaciones
+            //si los datos quedan vacios, estos permaneceran como estan
+            Console.WriteLine($"Nombre actual: {usuario.Nombres}");
+            Console.Write("Nuevo nombre: ");
+            string nuevoNombre = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(nuevoNombre))
             {
-                //buscamos el usuario en la base de datos
-                using var context = new RayonguindaContext();
-                var usuario = context.Usuarios.FirstOrDefault(u => u.CorreoInstitucional == correo);
-                //encontrando el usuario, se verifica que la fecha de nacimiento sea correcta
-                {
-                    if (usuario != null && usuario.FechaNacimiento.Date == fecha.Date)
-                    {
-                        // Generar token único
-                        string token = Guid.NewGuid().ToString();
-                        DateTime expira = DateTime.UtcNow.AddMinutes(15);
-                        tokens[token] = (expira, false);
-
-                        // Construir enlace temporal
-                        string enlace = $"https://www.google.com/?token={token}";
-
-                        // Enviar correo
-                        EnviarCorreo(usuario.CorreoInstitucional, enlace);
-
-                        //si la fecha es correcta devolvemos true
-                        Console.WriteLine("Todo ha salido con exito");
-                    }
-                    else
-                    {
-                        //si la fecha no es correcta devolvemos false
-                        Console.WriteLine("Fecha de nacimiento Incorrecta");
-                    }
-                }
+                usuario.Nombres = nuevoNombre;
             }
-            catch (Exception e)
+
+            Console.WriteLine($"Apellido Paterno actual: {usuario.ApellidoPaterno}");
+            Console.Write("Nuevo apellido paterno: ");
+            string nuevoApellidoP = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(nuevoApellidoP))
             {
-                Console.WriteLine(e);
+                usuario.ApellidoPaterno = nuevoApellidoP;
             }
+
+            Console.WriteLine($"Apellido Materno actual: {usuario.ApellidoMaterno}");
+            Console.Write("Nuevo apellido materno: ");
+            string nuevoApellidoM = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(nuevoApellidoM))
+            {
+                usuario.ApellidoMaterno = nuevoApellidoM;
+            }
+
+            Console.WriteLine($"Fecha de nacimiento actual: {usuario.FechaNacimiento:yyyy-MM-dd}");
+            Console.Write("Nueva fecha de nacimiento (yyyy-MM-dd) (dejar vacío para mantener): ");
+            string nuevaFechaStr = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(nuevaFechaStr) && DateTime.TryParse(nuevaFechaStr, out DateTime nuevaFecha))
+            {
+                usuario.FechaNacimiento = nuevaFecha;
+            }
+
+            Console.WriteLine($"Número de boleta actual: {usuario.NumBoleta}");
+            Console.Write("Nuevo número de boleta: ");
+            string nuevaBoleta = Console.ReadLine();
+            if (!string.IsNullOrWhiteSpace(nuevaBoleta))
+            {
+                usuario.NumBoleta = nuevaBoleta;
+            }
+
+
+            context.SaveChanges();
+            Console.WriteLine("Usuario modificado correctamente.");
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
+            Console.WriteLine($"Error al modificar usuario: {e.Message}");
         }
     }
-
-    // Método para validar el token (puedes llamarlo desde un endpoint)
-    public static bool ValidarToken(string token)
-    {
-        if (tokens.TryGetValue(token, out var info))
-        {
-            if (!info.Usado && DateTime.UtcNow <= info.Expira)
-            {
-                // Marcar como usado
-                tokens[token] = (info.Expira, true);
-                return true;
-            }
-            else
-            {
-                // Token expirado o ya usado
-                tokens[token] = (info.Expira, false);
-                return false;
-            }
-        }
-        return false;
-    }
-
-    public static void EnviarCorreo(string destinatario, string enlace)
-    {
-        var fromAddress = new MailAddress("jmonroyc2100@alumno.ipn.mx", "Rayon Guinda");
-        var toAddress = new MailAddress(destinatario);
-        const string fromPassword = "DE0021AEAD1A5F4B842ABC984FA8BEFC5713";
-        const string subject = "Recuperación de contraseña";
-        string body = $"Haz clic en el siguiente enlace para continuar (válido por 15 minutos): {enlace}";
-
-        var smtp = new SmtpClient
-        {
-            Host = "smtp.elasticemail.com",
-            Port = 2525,
-            EnableSsl = true,
-            DeliveryMethod = SmtpDeliveryMethod.Network,
-            UseDefaultCredentials = false,
-            Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
-        };
-        using (var message = new MailMessage(fromAddress, toAddress)
-        {
-            Subject = subject,
-            Body = body
-        })
-        {
-            smtp.Send(message);
-        }
-    }
-
 }
