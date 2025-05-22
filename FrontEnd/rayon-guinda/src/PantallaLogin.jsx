@@ -16,7 +16,7 @@ export function PantallaLogin(){
         const respuesta = await API.LoginUsuario(usuario);
         if(respuesta === true){
             setMensajeError('');
-            navigate("/pantallaPrincipal");
+            navigate("/PantallaPrincipal");
         }else{
             setMensajeError('Las credenciales son incorrectas');
         }

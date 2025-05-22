@@ -30,13 +30,6 @@ namespace APIrestRayonGuinda.Controllers
             return usuarioDAO.Logearse(usuario.CorreoInstitucional, usuario.Contraseña);
         }
 
-        [HttpPost("recuperarpassword")]
-        //aqui hacemos una funcion para recuperar la contraseña de un usuario
-        public bool RecuperarPassword([FromBody] UsuarioModel usuario)
-        {
-            //regresamos el metodo de recuperaropassword de la clase UsuarioDAO
-            return usuarioDAO.RecuperarContraseña(usuario.CorreoInstitucional, usuario.FechaNacimiento);
-        }
     }
 
 }

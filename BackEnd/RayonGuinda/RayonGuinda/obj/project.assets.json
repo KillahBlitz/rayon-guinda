@@ -4723,23 +4723,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Wcruz\\.nuget\\packages\\": {},
+    "C:\\Users\\fach7\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj",
+      "projectUniqueName": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj",
       "projectName": "RayonGuinda",
-      "projectPath": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj",
-      "packagesPath": "C:\\Users\\Wcruz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\obj\\",
+      "projectPath": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj",
+      "packagesPath": "C:\\Users\\fach7\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Wcruz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fach7\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4748,6 +4748,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
