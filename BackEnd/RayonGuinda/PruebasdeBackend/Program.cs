@@ -9,7 +9,7 @@ class Program
 {
     static void Main(string[] args)
     {
-
+        ConsultarDatos();
         ModificarUsuario();
     }
     static void AltaUsuario()
@@ -96,8 +96,45 @@ class Program
             Console.WriteLine(e);
         }
     }
+
+    static void ConsultarDatos()
+    {
+        try
+        {
+            Console.WriteLine("=== Perfil ===");
+
+            //Busca al usuario con su contraseña y correo institucional
+            Console.Write("Correo Institucional: ");
+            string correo = Console.ReadLine();
+
+            using var context = new RayonguindaContext();
+            var usuario = context.Usuarios.FirstOrDefault(u => u.CorreoInstitucional == correo);
+
+            if (usuario.CorreoInstitucional != correo)
+            {
+                Console.WriteLine("Usuario no encontrado"); }
+            else {
+                Console.WriteLine("=== Perfil ===");
+                Console.WriteLine(usuario.CorreoInstitucional);
+                Console.WriteLine();
+                //Muestra los datos actualmente almacenados
+                Console.WriteLine("Nombre: " + usuario.Nombres);
+                Console.WriteLine("Apellido paterno: " + usuario.ApellidoPaterno);
+                Console.WriteLine("Apellido materno: " + usuario.ApellidoMaterno);
+                Console.WriteLine("Numero de Boleta: " +  usuario.NumBoleta);
+                Console.WriteLine("Fecha de nacimiento: " + usuario.FechaNacimiento);
+
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error al mostrar usuario: {e.Message}");
+        }
+    }
+
     static void ModificarUsuario()
     {
+
         try
         {
             Console.WriteLine("=== Modificar Usuario ===");
