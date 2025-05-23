@@ -4,6 +4,7 @@ import { PantallaRegistro } from "./PantallaRegistro";
 import { PantallaRecuperarC } from "./PantallaRecuperarC";
 import { PantallaCambiarC} from "./PantallaCambiarC";
 import { PantallaPrincipal } from "./PantallaPrincipal";
+import { PantallaEditarPerfil } from "./PantallaEditarPerfil";
 
 
 export function App() {
@@ -16,6 +17,7 @@ export function App() {
         <Route path="/PantallaCambiarC" element={<PantallaCambiarC />} />
         
         <Route path="/PantallaPrincipal" element={<PantallaPrincipal />} />
+        <Route path="/PantallaEditarPerfil" element={<PantallaEditarPerfil />} />
       </Routes>
   )
 }
