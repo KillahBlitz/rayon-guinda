@@ -5,21 +5,23 @@ import redbuddy from "./media/buddyred.png";
 
 export function PantallaPrincipal(){
     const navigate = useNavigate();
+    const idUsuario = localStorage.getItem('idUsuario');
 
     function cerrarSesion(){
         sessionStorage.removeItem("usuario");
+        sessionStorage.removeItem("idUsuario");
         navigate("/");
     }
 
     function irAPerfil(){
-        navigate("/PantallaEditarPerfil");
+        navigate(`/PantallaEditarPerfil?id=${idUsuario}`);
     }
 
 
     return(
         <>
         <Box bg="#ffffff" minHeight="100vh" height="20vw" width="100vw" overflow="hidden" m={0} p={0} fontFamily={"Open Sans"}>
-            <Box bg="#4A0000" height="70px" width="100%">
+            <Box bg="#4A0000" height="100px" width="100%">
                 <br />
                 <HStack as='nav' spacing='10px' ml="10px">
                     <VStack>
@@ -33,12 +35,12 @@ export function PantallaPrincipal(){
                     <Center>
                         <VStack spacing={4} align='stretch' mt='20%'>
                             <Box mt='150%'>
-                                <Button height="50px" width="100px">Grupos</Button>
+                                <Button height="70px" width="100px">Grupos</Button>
                                 <br/>
                                 <br/>
-                                <Button height="50px" width="100px">Foros</Button>
+                                <Button height="70px" width="100px">Foros</Button>
                             </Box>
-                            <Box mt='420px'>
+                            <Box mt='150px'>
                                 <Button height="30px" width="100px">Chats</Button>
                                 <br/>
                                 <br/>

@@ -78,5 +78,26 @@ namespace RayonGuinda.Operaciones
                 return false;
             }
         }
+
+        //metodo para devolver el id del usuario cuando inicia sesion
+        public int ObtenerIdUsuario(string correo)
+        {
+            try
+            {
+                //buscamos el usuario en la base de datos
+                UsuarioModel usuario = Context.Usuarios.FirstOrDefault(u => u.CorreoInstitucional == correo);
+                //si el usuario no existe devolvemos 0
+                if (usuario == null)
+                {
+                    return 0;
+                }
+                //si el usuario existe devolvemos su id
+                return usuario.UserId;
+            }
+            catch (Exception e)
+            {
+                return 0;
+            }
+        }
     }
 }

@@ -1,34 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\",
+  "WorkspaceRootPath": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|c:\\users\\wcruz\\desktop\\rayon-guinda-main\\rayon-guinda\\backend\\rayonguinda\\pruebasdebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|solutionrelative:pruebasdebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|c:\\users\\wcruz\\desktop\\rayon-guinda-main\\rayon-guinda\\backend\\rayonguinda\\apirestrayonguinda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|solutionrelative:apirestrayonguinda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|c:\\users\\wcruz\\desktop\\rayon-guinda-main\\rayon-guinda\\backend\\rayonguinda\\apirestrayonguinda\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|c:\\users\\fach7\\onedrive\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\apirestrayonguinda\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|solutionrelative:apirestrayonguinda\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|c:\\users\\wcruz\\desktop\\rayon-guinda-main\\rayon-guinda\\backend\\rayonguinda\\apirestrayonguinda\\apirestrayonguinda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|solutionrelative:apirestrayonguinda\\apirestrayonguinda.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|c:\\users\\wcruz\\desktop\\rayon-guinda-main\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|c:\\users\\fach7\\onedrive\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|c:\\users\\wcruz\\desktop\\rayon-guinda-main\\rayon-guinda\\backend\\rayonguinda\\pruebasdebackend\\pruebasdebackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|solutionrelative:pruebasdebackend\\pruebasdebackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|c:\\users\\wcruz\\desktop\\rayon-guinda-main\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\models\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|c:\\users\\fach7\\onedrive\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\pruebasdebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACED01A6-1F2F-42AD-B394-E547F6B52693}|PruebasdeBackend\\PruebasdeBackend.csproj|solutionrelative:pruebasdebackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,96 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Program.cs",
-              "RelativeDocumentMoniker": "APIrestRayonGuinda\\Program.cs",
-              "ToolTip": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Program.cs",
-              "RelativeToolTip": "APIrestRayonGuinda\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
+              "ToolTip": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
+              "RelativeToolTip": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAADwv2QAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T22:19:37.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAABMAAADAIf1i4lEnwB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:50:18.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "APIrestRayonGuinda.csproj",
-              "DocumentMoniker": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\APIrestRayonGuinda.csproj",
-              "RelativeDocumentMoniker": "APIrestRayonGuinda\\APIrestRayonGuinda.csproj",
-              "ToolTip": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\APIrestRayonGuinda.csproj",
-              "RelativeToolTip": "APIrestRayonGuinda\\APIrestRayonGuinda.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-22T21:50:10.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
-              "RelativeDocumentMoniker": "PruebasdeBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
-              "RelativeToolTip": "PruebasdeBackend\\Program.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAwwHwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:49:54.112Z",
+              "WhenOpened": "2025-05-23T21:35:19.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PruebasdeBackend.csproj",
-              "DocumentMoniker": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\PruebasdeBackend.csproj",
-              "RelativeDocumentMoniker": "PruebasdeBackend\\PruebasdeBackend.csproj",
-              "ToolTip": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\PruebasdeBackend.csproj",
-              "RelativeToolTip": "PruebasdeBackend\\PruebasdeBackend.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-22T21:49:51.825Z"
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs*",
+              "RelativeToolTip": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwCUAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T21:35:02.665Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioDAO.cs",
-              "DocumentMoniker": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "ToolTip": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAE8AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
+              "RelativeDocumentMoniker": "PruebasdeBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\Program.cs",
+              "RelativeToolTip": "PruebasdeBackend\\Program.cs",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAowH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:49:01.983Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsuarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\UsuarioModel.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Models\\UsuarioModel.cs",
-              "ToolTip": "C:\\Users\\Wcruz\\Desktop\\rayon-guinda-main\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\UsuarioModel.cs",
-              "RelativeToolTip": "RayonGuinda\\Models\\UsuarioModel.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T21:48:53.383Z"
+              "WhenOpened": "2025-05-23T21:34:42.002Z",
+              "EditorCaption": ""
             }
           ]
         }

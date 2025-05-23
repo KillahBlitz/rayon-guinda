@@ -15,12 +15,13 @@ export function PantallaLogin(){
         e.preventDefault();
         const respuesta = await API.LoginUsuario(usuario);
         if(respuesta === true){
+            const idUsuario = await API.RecuperarIDuser(usuario);
+            localStorage.setItem('idUsuario', idUsuario);
+            navigate(`/PantallaPrincipal?id=${idUsuario}`);
             setMensajeError('');
-            navigate("/PantallaPrincipal");
         }else{
             setMensajeError('Las credenciales son incorrectas');
         }
-        
     }
 
     function registrar(){

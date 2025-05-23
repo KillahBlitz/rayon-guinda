@@ -3,8 +3,6 @@
 const URL = 'http://localhost:5263/api/';
 
 
-
-
 //funciones para el usuario
 export function RegistroUsuario(usuario){
     //guardando datos de reguistro
@@ -33,4 +31,12 @@ export function LoginUsuario(usuario){
         }
     })
     .then(data => data.json()) //entonces parseamos data a json que es la respuesta de la peticion
+}
+
+export function RecuperarIDuser(usuario){
+    let correo = usuario.Correo;
+    //llamar a la api en la funcion de devolver id del usuario
+    return fetch(URL+'getid?CorreoInstitucional='+correo, {
+        method: 'GET'
+    }).then(response => response.json());
 }

@@ -30,6 +30,13 @@ namespace APIrestRayonGuinda.Controllers
             return usuarioDAO.Logearse(usuario.CorreoInstitucional, usuario.Contraseña);
         }
 
+        [HttpGet("getid")]
+        //aqui hacemos una funcion para obtener el id de un usuario
+        public int getid([FromQuery] UsuarioModel usuario)
+        {
+            //regresamos el metodo de getid de la clase UsuarioDAO
+            return usuarioDAO.ObtenerIdUsuario(usuario.CorreoInstitucional);
+        }
     }
 
 }

@@ -1,6 +1,82 @@
 [
   {
     "ContainingType": "APIrestRayonGuinda.Controllers.UsuarioController",
+    "Method": "getid",
+    "RelativePath": "api/getid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ApellidoPaterno",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ApellidoMaterno",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Nombres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NumBoleta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FechaNacimiento",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CorreoInstitucional",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Contrase\u00F1a",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Chats",
+        "Type": "System.Collections.Generic.ICollection\u00601[[RayonGuinda.Models.ChatModel, RayonGuinda, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Foros",
+        "Type": "System.Collections.Generic.ICollection\u00601[[RayonGuinda.Models.ForoModel, RayonGuinda, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Grupos",
+        "Type": "System.Collections.Generic.ICollection\u00601[[RayonGuinda.Models.GrupoModel, RayonGuinda, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "APIrestRayonGuinda.Controllers.UsuarioController",
     "Method": "login",
     "RelativePath": "api/login",
     "HttpMethod": "POST",
