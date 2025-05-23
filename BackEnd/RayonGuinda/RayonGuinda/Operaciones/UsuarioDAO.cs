@@ -99,5 +99,48 @@ namespace RayonGuinda.Operaciones
                 return 0;
             }
         }
+
+        //consultar los datos del usuario por id
+        public UserAux ConsultarUsuario(int id)
+        {
+            try
+            {
+                //buscamos el usuario en la base de datos
+                UsuarioModel usuario = Context.Usuarios.FirstOrDefault(u => u.UserId == id);
+                //si el usuario no existe devolvemos null
+                if (usuario == null)
+                {
+                    return null;
+                }
+                //solo devolver correo, apellido paterno, apellido materno, nombres, fechanacimiento y boleta
+                var user = new UserAux
+                {
+                    CorreoInstitucional = usuario.CorreoInstitucional,
+                    ApellidoPaterno = usuario.ApellidoPaterno,
+                    ApellidoMaterno = usuario.ApellidoMaterno,
+                    Nombres = usuario.Nombres,
+                    FechaNacimiento = DateOnly.FromDateTime(usuario.FechaNacimiento),
+                    NumBoleta = usuario.NumBoleta
+                };
+                //si el usuario existe devolvemos al usuario
+                return user;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
     }
+
+    //clase auxiliar que solo manda lo que se pide de un usuario
+    public class UserAux
+    {
+        public string CorreoInstitucional { get; set; }
+        public string ApellidoPaterno { get; set; }
+        public string ApellidoMaterno { get; set; }
+        public string Nombres { get; set; }
+        public DateOnly FechaNacimiento { get; set; }
+        public string NumBoleta { get; set; }
+    }
+
 }

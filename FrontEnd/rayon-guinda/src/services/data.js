@@ -40,3 +40,11 @@ export function RecuperarIDuser(usuario){
         method: 'GET'
     }).then(response => response.json());
 }
+
+//funcion para recuperar los datos del usuario por el id
+export function RecuperarUsuario(id){
+    let idUsuario = id;
+    return fetch(URL+'getusuario?id='+idUsuario, {
+        method: 'GET'
+    }).then(response => response.json());
+}

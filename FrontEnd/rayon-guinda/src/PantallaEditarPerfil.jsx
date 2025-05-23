@@ -1,12 +1,28 @@
 import {Box, Center, FormControl, FormLabel, Heading, Input, Flex, Alert, Button } from '@chakra-ui/react';
 import * as API from "./services/data";
-import { Form, useNavigate } from "react-router";
-import { useState } from 'react'
+import { useNavigate } from "react-router";
+import { useState, useEffect } from 'react';
+
 
 export function PantallaEditarPerfil() {
     const [usuario, setUsuario] = useState({Apatern:'', Amatern:'', Nombre:'', FechaNac:'', Correo:'', Password:'', ConfirmarPassword:'', NoBoleta:''});
     const navigate = useNavigate();
     const idUsuario = localStorage.getItem('idUsuario');
+
+    // Recuperar los datos del usuario al cargar el componente
+    useEffect(() => {
+        API.RecuperarUsuario(idUsuario)
+            .then(data => {
+                setUsuario({
+                    Apatern: data.apellidoPaterno,
+                    Amatern: data.apellidoMaterno,
+                    Nombre: data.nombres,
+                    FechaNac: data.fechaNacimiento,
+                    Correo: data.correoInstitucional,
+                    NoBoleta: data.numBoleta
+                });
+            })}, [idUsuario]);
+
 
     function volver(){
         navigate(`/PantallaPrincipal?id=${idUsuario}`);
@@ -50,7 +66,7 @@ export function PantallaEditarPerfil() {
                                     <FormControl mt='10px'>
                                         <Center>
                                             <FormLabel>Fecha de nacimiento: </FormLabel>
-                                            <Input type="date" id="Date" bg='white' color='black' width='200px' mr="45px" isReadOnly/>
+                                            <Input type="text" id="Date" bg='white' color='black' width='200px' mr="45px" placeholder={usuario.FechaNac} isReadOnly/>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='10px'>

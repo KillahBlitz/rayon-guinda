@@ -37,6 +37,14 @@ namespace APIrestRayonGuinda.Controllers
             //regresamos el metodo de getid de la clase UsuarioDAO
             return usuarioDAO.ObtenerIdUsuario(usuario.CorreoInstitucional);
         }
+
+        [HttpGet("getusuario")]
+        //aqui hacemos una funcion para obtener todos los datos del usuario de acuerdo a su id
+        public UserAux getusuario([FromQuery] int id)
+        {
+            //regresamos el metodo de getusuario de la clase UsuarioDAO
+            return usuarioDAO.ConsultarUsuario(id);
+        }
     }
 
 }
