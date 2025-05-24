@@ -8,6 +8,8 @@ export function PantallaEditarPerfil() {
     const [usuario, setUsuario] = useState({Apatern:'', Amatern:'', Nombre:'', FechaNac:'', Correo:'', Password:'', ConfirmarPassword:'', NoBoleta:''});
     const navigate = useNavigate();
     const idUsuario = localStorage.getItem('idUsuario');
+    // Censurar el correo hasta la @
+    const censoredEmail = usuario.Correo.replace(/(.{2})(.*)(@.*)/, (_, p1, p2, p3) => `${p1}${'*'.repeat(p2.length)}${p3}`);
 
     // Recuperar los datos del usuario al cargar el componente
     useEffect(() => {
@@ -22,6 +24,7 @@ export function PantallaEditarPerfil() {
                     NoBoleta: data.numBoleta
                 });
             })}, [idUsuario]);
+
 
 
     function volver(){
@@ -42,7 +45,7 @@ export function PantallaEditarPerfil() {
                                 <form id='vizualizer-form'>
                                     <FormControl mt='20px'>
                                         <Center>
-                                            <FormLabel>Correo: {usuario.Correo}</FormLabel>
+                                            <FormLabel>Correo: {censoredEmail}</FormLabel>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='10px'>
@@ -66,7 +69,7 @@ export function PantallaEditarPerfil() {
                                     <FormControl mt='10px'>
                                         <Center>
                                             <FormLabel>Fecha de nacimiento: </FormLabel>
-                                            <Input type="text" id="Date" bg='white' color='black' width='200px' mr="45px" placeholder={usuario.FechaNac} isReadOnly/>
+                                            <Input type="text" id="Date" bg='white' color='black' width='250px' mr="95px" placeholder={usuario.FechaNac} isReadOnly/>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='10px'>

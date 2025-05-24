@@ -48,3 +48,11 @@ export function RecuperarUsuario(id){
         method: 'GET'
     }).then(response => response.json());
 }
+
+//funcion para recupera los grupos del usuario por el id
+export function RecuperarGruposUsuario(id){
+    let idUsuario = id;
+    return fetch(URL+'usergropus?id='+idUsuario, {
+        method: 'GET'
+    }).then(response => response.json());
+}

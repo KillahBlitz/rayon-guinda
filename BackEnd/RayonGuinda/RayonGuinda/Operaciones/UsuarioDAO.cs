@@ -130,6 +130,34 @@ namespace RayonGuinda.Operaciones
                 return null;
             }
         }
+
+        //metodo para recuperar los grupos de un usuario por id del usuario
+        public List<string> GruposUsuario(int id)
+        {
+            try
+            {
+                //buscamos al usuario en la base de datos
+                UsuarioModel usuario = Context.Usuarios.FirstOrDefault(u => u.UserId == id);
+                //si el usuario no existe devolvemos null
+                if (usuario == null)
+                {
+                    return null;
+                }
+                //si el usuario existe devolvemos la lista de grupos a los que pertenece
+                var grupos = Context.Grupos.Where(g => g.Users.Contains(usuario)).Select(g => g.NombreGrupo).ToList();
+                //si el usuario no pertenece a ningun grupo devolvemos null
+                if (grupos.Count == 0)
+                {
+                    return null;
+                }
+                //devolvemos la lista de grupos
+                return grupos;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
     }
 
     //clase auxiliar que solo manda lo que se pide de un usuario

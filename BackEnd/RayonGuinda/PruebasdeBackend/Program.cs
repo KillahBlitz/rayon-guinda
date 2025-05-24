@@ -9,8 +9,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        ConsultarDatos();
-        ModificarUsuario();
+        ObtenerGruposPorUsuarioId();
     }
     static void AltaUsuario()
     {
@@ -205,6 +204,33 @@ class Program
         catch (Exception e)
         {
             Console.WriteLine($"Error al modificar usuario: {e.Message}");
+        }
+
+    }
+
+    //funcion para recuperar los ID de los grupos a los que pertenece el usuario de acuerdo a su id de usuario
+    static void ObtenerGruposPorUsuarioId()
+    {
+        //ingresar el id del usuario
+        Console.WriteLine("=== Grupos del Usuario ===");
+        Console.Write("ID del Usuario: ");
+        int id = int.Parse(Console.ReadLine());
+        //ahora busca los id de los grupos a los que pertenece el usuario
+        using var context = new RayonguindaContext();
+        //busar los grupos con ICollection<GrupoModel> y el id del usuario
+        var grupos = context.Grupos.Where(g => g.Users.Any(u => u.UserId == id)).ToList();
+        //imprimir los grupos
+        if (grupos.Count > 0)
+        {
+            Console.WriteLine("Grupos encontrados:");
+            foreach (var grupo in grupos)
+            {
+                Console.WriteLine($"Grupo ID: {grupo.GrupoId}, Nombre: {grupo.NombreGrupo}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("No se encontraron grupos para este usuario.");
         }
     }
 }

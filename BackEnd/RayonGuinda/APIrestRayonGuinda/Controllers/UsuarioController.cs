@@ -45,6 +45,14 @@ namespace APIrestRayonGuinda.Controllers
             //regresamos el metodo de getusuario de la clase UsuarioDAO
             return usuarioDAO.ConsultarUsuario(id);
         }
+
+        [HttpGet("usergropus")]
+        //aqui hacemos una funcion para obtener todos los grupos a los que pertenece el usuario de acuerdo a su id
+        public List<string> getgrupos([FromQuery] int id)
+        {
+            //regresamos el metodo de getgrupos de la clase UsuarioDAO
+            return usuarioDAO.GruposUsuario(id);
+        }
     }
 
 }
