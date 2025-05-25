@@ -9,10 +9,17 @@ export function SubPantallaGrupos() {
 
     
     useEffect(() => {
+        (async () => {
+            await fetchGrupos();
+        })();
+    });
+
+    async function fetchGrupos() {
         API.RecuperarGruposUsuario(idUsuario)
             .then(data => {
                 setGrupos(data);
-            })}, [idUsuario]);
+            })
+        }
     
     return (
     <>
@@ -27,11 +34,11 @@ export function SubPantallaGrupos() {
             {// Mapeo de </HStack>los grupos para mostrarlos en la pantalla en forma de botones solo el nombre
             grupos.map((grupo) => (
                 <Box key={grupo} padding='10px'>
-                    <Button width='200px' height='100px' bgColor='#4A0000' color='white' variant='solid' fontSize='18px'>{grupo}</Button>
+                    <Button width='200px' height='100px' bgColor='#4A0000'  _hover={{ bg: "#3c3c3c" }} color='white' variant='solid' fontSize='18px'>{grupo}</Button>
                 </Box>
             ))}
             <Box padding='10px'>
-                <Button width='100px' height='100px' bgColor='#4A0000' color='white' variant='solid' fontSize='40px'>+</Button>
+                <Button width='100px' height='100px' bgColor='#4A0000'  _hover={{ bg: "#3c3c3c" }} color='white' variant='solid' fontSize='40px'>+</Button>
             </Box>
         </HStack>
     </>)

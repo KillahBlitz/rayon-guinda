@@ -1,20 +1,17 @@
 import {Box, Center, FormControl, FormLabel, Heading, Input, Flex, Alert, Button, useToast } from '@chakra-ui/react';
 import * as API from "./services/data";
 import { useNavigate } from "react-router";
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 
-export function PantallaEditarPerfil() {
+export function PantallaModificadoraDatos() {
     const [usuario, setUsuario] = useState({Apatern:'', Amatern:'', Nombre:'', FechaNac:'', Correo:'', Password:'', NoBoleta:''});
     const navigate = useNavigate();
     const idUsuario = localStorage.getItem('idUsuario');
-    // Censurar el correo antes de la @ y después de la @ ver el dominio del correo
-    const censoredEmail = usuario.Correo.replace(/^[^@]+/, match => '*'.repeat(match.length));
 
     //variables vizuales para el toast y el input de la contraseña
     const toast = useToast();
     const [passwordInput, setPasswordInput] = useState('');
-    const inputRef = useRef(null);
 
     // Recuperar los datos del usuario al cargar el componente
     useEffect(() => {
@@ -30,54 +27,6 @@ export function PantallaEditarPerfil() {
                     Password: data.password
                 });
             })}, [idUsuario]);
-
-    //funcion que al dar clicl al boton modificar, aparezca un mensaje de alerta en medio de la pantalla que te pida la contraseña
-    function ConfirmarIdentidad(){
-        //if(!toast.isActive(toast)){
-            toast({ duration: null, isClosable: true, position: 'top',
-                render: ({ onClose }) => (
-                    <Center>
-                        <Box p="20" bg="#4A0000" color="white" fontSize="xl" borderRadius="lg" boxShadow="xl" mt="250px" textAlign="center" minW="400px" >
-                        <Flex direction='column' alignItems='center'>
-                            <Center>
-                                <FormLabel fontSize="30px">Ingresa tu contraseña</FormLabel>
-                            </Center>
-                            <Center mt="20px">
-                                <Input type="password" id="ConfirmPassword" ref={inputRef} placeholder="Contraseña" bg='white' color='black' width='300px' onChange={event => setPasswordInput(event.target.value)} />
-                            </Center>
-                            <Center>
-                                <Button mt="30px" mr="50px" colorScheme="teal" width="100px" bg= "#3c3c3c" _hover={{ bg: "#6d3535" }} onClick={onClose} >Cancelar</Button>
-                                <Button mt="30px" ml="50px" colorScheme="teal" width="100px" bg= "#3c3c3c"  _hover={{ bg: "#6d3535" }} onClick={validarContrasena} >Enviar</Button>
-                            </Center>
-                        </Flex>
-                        </Box>
-                    </Center>
-                )
-            });
-        //}
-    }
-    
-    //Funcion que valida la contraseña
-    function validarContrasena(){
-        if(passwordInput === usuario.Password){
-            toast.closeAll();
-            navigate(`/PantallaModificadoraDatos?id=${idUsuario}`);
-        }else{
-            return(
-                toast.closeAll(),
-                toast({ duration: 1000, isClosable: true, position: 'top',
-                    render: () => (
-                        <Alert status='error' variant='solid' width='300px' borderRadius='md'>
-                            <Box color='white'>
-                                Contraseña incorrecta
-                            </Box>
-                        </Alert>
-                    )
-                }
-            ))
-        }
-    }
-
 
     function volver(){
         navigate(`/PantallaPrincipal?id=${idUsuario}`);
@@ -99,42 +48,42 @@ export function PantallaEditarPerfil() {
                                 <form id='vizualizer-form'>
                                     <FormControl mt='20px'>
                                         <Center>
-                                            <FormLabel>Correo: {censoredEmail}</FormLabel>
+                                            <FormLabel>Correo: {usuario.Correo}</FormLabel>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='10px'>
                                         <Center>
                                             <FormLabel>Apellido Paterno: </FormLabel>
-                                            <Input type="text" id="Apatern" value={usuario.Apatern} bg='white' color='black' width='250px' mr='70px' isReadOnly/>
+                                            <Input type="text" id="Apatern" value={usuario.Apatern} bg='white' color='black' width='250px' mr='70px'/>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='10px'>
                                         <Center>
                                             <FormLabel>Apellido Materno: </FormLabel>
-                                            <Input type="text" id="Amatern" value={usuario.Amatern} bg='white' color='black' width='250px' mr='75px' isReadOnly/>
+                                            <Input type="text" id="Amatern" value={usuario.Amatern} bg='white' color='black' width='250px' mr='75px'/>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='10px'>
                                         <Center>
                                             <FormLabel>Nombre(s): </FormLabel>
-                                            <Input type="text" id="Nombre" value={usuario.Nombre} bg='white' color='black' width='250px' mr='30px' isReadOnly/>
+                                            <Input type="text" id="Nombre"  value={usuario.Nombre} bg='white' color='black' width='250px' mr='30px'/>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='10px'>
                                         <Center>
                                             <FormLabel>Fecha de nacimiento: </FormLabel>
-                                            <Input type="date" id="Date" bg='white' color='black' width='250px' mr="95px" value={usuario.FechaNac} isReadOnly/>
+                                            <Input type="date" id="Date" bg='white' color='black' width='250px' mr="95px" value={usuario.FechaNac}/>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='10px'>
                                         <Center>
                                             <FormLabel>Numero de Boleta: </FormLabel>
-                                            <Input type="text" id="boleta" value={usuario.NoBoleta} bg='white' color='black' width='250px' mr='80px' isReadOnly/>
+                                            <Input type="text" id="boleta" value={usuario.NoBoleta} bg='white' color='black' width='250px' mr='80px'/>
                                         </Center>
                                     </FormControl>
                                     <FormControl mt='30px'>
                                         <Center>
-                                            <Input type='button' mt='3px' width='30%' id='Modificar' borderColor='teal' value='Modificar' border='none' cursor='pointer' fontFamily={"Ubuntu"} bg='#3c3c3c' onClick={() => {ConfirmarIdentidad()}}/>
+                                            <Input type='button' mt='3px' width='30%' id='Modificar' borderColor='teal' value='Modificar' border='none' cursor='pointer' fontFamily={"Ubuntu"} bg='#3c3c3c'/>
                                         </Center>
                                     </FormControl>
                                 </form>

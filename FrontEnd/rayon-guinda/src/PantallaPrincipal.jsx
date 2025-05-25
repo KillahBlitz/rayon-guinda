@@ -1,9 +1,8 @@
 import {Box, Center, FormControl, FormLabel, Heading, Input, Image, Button, HStack, Link, VStack, Flex } from '@chakra-ui/react';
-import { SubPantallaGrupos } from './SubPantallaGrupos';
 import {  useState } from 'react';
 import { useNavigate } from "react-router";
 import redbuddy from "./media/buddyred.png";
-
+import { SubPantallaGrupos } from './SubPantallaGrupos';
 
 export function PantallaPrincipal(){
     const navigate = useNavigate();

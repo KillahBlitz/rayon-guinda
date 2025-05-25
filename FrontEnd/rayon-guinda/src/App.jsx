@@ -5,7 +5,9 @@ import { PantallaRecuperarC } from "./PantallaRecuperarC";
 import { PantallaCambiarC} from "./PantallaCambiarC";
 import { PantallaPrincipal } from "./PantallaPrincipal";
 import { PantallaEditarPerfil } from "./PantallaEditarPerfil";
+import { PantallaModificadoraDatos } from "./PantallaModificadoraDatos";
 import { SubPantallaGrupos } from "./SubPantallaGrupos";
+
 
 
 export function App() {
@@ -20,6 +22,7 @@ export function App() {
         <Route path="/PantallaPrincipal" element={<PantallaPrincipal />} />
         <Route path="/SubPantallaGrupos" element={<SubPantallaGrupos />} />
         <Route path="/PantallaEditarPerfil" element={<PantallaEditarPerfil />} />
+        <Route path="/PantallaModificadoraDatos" element={<PantallaModificadoraDatos />} />
       </Routes>
   )
 }

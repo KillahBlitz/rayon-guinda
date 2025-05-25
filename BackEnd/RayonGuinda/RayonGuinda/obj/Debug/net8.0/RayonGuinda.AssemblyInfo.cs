@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RayonGuinda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+692c1f45caa108a9e109c88d035fb072a97bca5f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73e1207e590044089a75ac293477ac7d80446630")]
 [assembly: System.Reflection.AssemblyProductAttribute("RayonGuinda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RayonGuinda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

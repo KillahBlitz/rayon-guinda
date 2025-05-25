@@ -120,7 +120,8 @@ namespace RayonGuinda.Operaciones
                     ApellidoMaterno = usuario.ApellidoMaterno,
                     Nombres = usuario.Nombres,
                     FechaNacimiento = DateOnly.FromDateTime(usuario.FechaNacimiento),
-                    NumBoleta = usuario.NumBoleta
+                    NumBoleta = usuario.NumBoleta,
+                    password = usuario.Contraseña
                 };
                 //si el usuario existe devolvemos al usuario
                 return user;
@@ -169,6 +170,7 @@ namespace RayonGuinda.Operaciones
         public string Nombres { get; set; }
         public DateOnly FechaNacimiento { get; set; }
         public string NumBoleta { get; set; }
+        public string password { get; set; }
     }
 
 }
