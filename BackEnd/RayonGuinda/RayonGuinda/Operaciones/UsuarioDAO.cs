@@ -159,6 +159,34 @@ namespace RayonGuinda.Operaciones
                 return null;
             }
         }
+
+        public bool ActualizarUsuario(int id, string Apatern, string Amatern, string Nombre, DateTime FechaNac, string Correo, string boleta)
+        {
+            try
+            {
+                //buscamos al usuario en la base de datos
+                UsuarioModel usuario = Context.Usuarios.FirstOrDefault(u => u.UserId == id);
+                //si el usuario no existe devolvemos false
+                if (usuario == null)
+                {
+                    return false;
+                }
+                //actualizamos los valores del usuario
+                usuario.ApellidoPaterno = Apatern;
+                usuario.ApellidoMaterno = Amatern;
+                usuario.Nombres = Nombre;
+                usuario.FechaNacimiento = FechaNac;
+                usuario.CorreoInstitucional = Correo;
+                usuario.NumBoleta = boleta;
+                //guardamos los cambios en la base de datos
+                Context.SaveChanges();
+                return true;
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+        }
     }
 
     //clase auxiliar que solo manda lo que se pide de un usuario

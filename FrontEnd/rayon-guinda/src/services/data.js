@@ -56,3 +56,16 @@ export function RecuperarGruposUsuario(id){
         method: 'GET'
     }).then(response => response.json());
 }
+
+//funcion para modificar los datos del usuario
+export function ModificarUsuario(usuario){
+    let data = { UserId: usuario.Id, ApellidoPaterno: usuario.Apatern, ApellidoMaterno: usuario.Amatern, Nombres: usuario.Nombre, FechaNacimiento: usuario.FechaNac, CorreoInstitucional: usuario.Correo, NumBoleta: usuario.NoBoleta }
+    console.log(data);
+    return fetch(URL+'cambiardatos', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }).then(data => data.json());
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIrestRayonGuinda")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73e1207e590044089a75ac293477ac7d80446630")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24485707c04dce781d5d183a1ac6bf735c2f7963")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIrestRayonGuinda")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIrestRayonGuinda")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

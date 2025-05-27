@@ -53,6 +53,14 @@ namespace APIrestRayonGuinda.Controllers
             //regresamos el metodo de getgrupos de la clase UsuarioDAO
             return usuarioDAO.GruposUsuario(id);
         }
+
+        [HttpPost("cambiardatos")]
+        //aqui hacemos una funcion para cambiar los datos del usuario
+        public bool CambiarDatos([FromBody] UsuarioModel usuario)
+        {
+            //regresamos el metodo de CambiarDatos de la clase UsuarioDAO
+            return usuarioDAO.ActualizarUsuario(usuario.UserId, usuario.ApellidoPaterno, usuario.ApellidoMaterno, usuario.Nombres, usuario.FechaNacimiento, usuario.CorreoInstitucional, usuario.NumBoleta);
+        }
     }
 
 }
