@@ -4,6 +4,7 @@ const URL = 'http://localhost:5263/api/';
 
 
 //funciones para el usuario
+//aqui estan las peticiones a la API relacionadas con el usuario (UsuarioController)
 export function RegistroUsuario(usuario){
     //guardando datos de reguistro
     let data = { ApellidoPaterno: usuario.Apatern, ApellidoMaterno: usuario.Amatern, Nombres: usuario.Nombre, FechaNacimiento: usuario.FechaNac, CorreoInstitucional: usuario.Correo, Contraseña: usuario.Password}   
@@ -18,7 +19,7 @@ export function RegistroUsuario(usuario){
     }).then(data => data.json()) //entonces parseamos data a json que es la respuesta de la peticion
 }
 
-
+//funcion para iniciar sesion del usuario
 export function LoginUsuario(usuario){
     let datos = {CorreoInstitucional: usuario.Correo, Contraseña: usuario.Password}
 
@@ -33,6 +34,7 @@ export function LoginUsuario(usuario){
     .then(data => data.json()) //entonces parseamos data a json que es la respuesta de la peticion
 }
 
+//funcion para recuperar el id del usuario por el correo
 export function RecuperarIDuser(usuario){
     let correo = usuario.Correo;
     //llamar a la api en la funcion de devolver id del usuario
@@ -68,4 +70,14 @@ export function ModificarUsuario(usuario){
         },
         body: JSON.stringify(data)
     }).then(data => data.json());
+}
+
+//funciones para los grupos
+//aqui estan las peticiones a la API relacionadas con los grupos (GrupoController)
+
+//funcion para recuperar un codigo unico de grupo
+export function RecuperarCodigoGrupo(){
+    return fetch(URL+'crearcodigogrupo', {
+        method: 'GET'
+    }).then(response => response.text());
 }

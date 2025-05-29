@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\",
+  "WorkspaceRootPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|c:\\users\\fach7\\onedrive\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\apirestrayonguinda\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\apirestrayonguinda\\controllers\\grupocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|solutionrelative:apirestrayonguinda\\controllers\\grupocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\apirestrayonguinda\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CA96BB9-2289-4BB4-BFFB-C9F8484AD66F}|APIrestRayonGuinda\\APIrestRayonGuinda.csproj|solutionrelative:apirestrayonguinda\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|c:\\users\\fach7\\onedrive\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|c:\\users\\fach7\\onedrive\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\models\\grupomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\models\\grupomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|d:\\windows 64\\documentos\\github\\rayon-guinda\\backend\\rayonguinda\\rayonguinda\\operaciones\\grupodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{786CAB7A-27E2-49A7-8466-B46619F861CE}|RayonGuinda\\RayonGuinda.csproj|solutionrelative:rayonguinda\\operaciones\\grupodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,41 +25,46 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GrupoModel.cs",
-              "DocumentMoniker": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\GrupoModel.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Models\\GrupoModel.cs",
-              "ToolTip": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Models\\GrupoModel.cs",
-              "RelativeToolTip": "RayonGuinda\\Models\\GrupoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T08:44:13.763Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UsuarioDAO.cs",
-              "DocumentMoniker": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "ToolTip": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "RelativeToolTip": "RayonGuinda\\Operaciones\\UsuarioDAO.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAADwv6IAAAB9AAAAAAAAAA==",
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T08:53:40.937Z",
+              "WhenOpened": "2025-05-29T07:37:37.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "APIrestRayonGuinda\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAWwD0AAAC4AAAAAAAAAA==",
+              "Title": "GrupoController.cs",
+              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\GrupoController.cs",
+              "RelativeDocumentMoniker": "APIrestRayonGuinda\\Controllers\\GrupoController.cs",
+              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\APIrestRayonGuinda\\Controllers\\GrupoController.cs",
+              "RelativeToolTip": "APIrestRayonGuinda\\Controllers\\GrupoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T21:35:02.665Z",
+              "WhenOpened": "2025-05-29T07:37:21.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GrupoDAO.cs",
+              "DocumentMoniker": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\GrupoDAO.cs",
+              "RelativeDocumentMoniker": "RayonGuinda\\Operaciones\\GrupoDAO.cs",
+              "ToolTip": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\Operaciones\\GrupoDAO.cs",
+              "RelativeToolTip": "RayonGuinda\\Operaciones\\GrupoDAO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T07:32:18.131Z",
               "EditorCaption": ""
             }
           ]

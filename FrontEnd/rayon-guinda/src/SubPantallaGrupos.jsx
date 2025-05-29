@@ -1,4 +1,4 @@
-import {Box, Center, Input, Button, HStack} from '@chakra-ui/react';
+import {Box, Center, Input, Button, Flex, FormLabel, HStack, useToast} from '@chakra-ui/react';
 import * as API from "./services/data";
 import { useEffect, useState } from 'react';
 
@@ -7,6 +7,8 @@ export function SubPantallaGrupos() {
     const [grupos, setGrupos] = useState([]);
     const idUsuario = localStorage.getItem('idUsuario');
 
+    //variables vizuales para el toast
+    const toast = useToast();
     
     useEffect(() => {
         (async () => {
@@ -19,7 +21,63 @@ export function SubPantallaGrupos() {
             .then(data => {
                 setGrupos(data);
             })
-        }
+    }
+
+    
+    // funcion se ejecuta para crear grupos o unirse a grupos
+    async function CrearGrupo() {
+        toast.closeAll(); // Cierra cualquier toast abierto antes de mostrar uno nuevo
+        const nuevoCodigo = await API.RecuperarCodigoGrupo(); // Espera a que llegue el código
+
+        toast({ duration: null, isClosable: true, position: 'top',
+            render: ({ onClose }) => (
+            <Center>
+                <Box p="20" bg="#4A0000" color="white" fontSize="xl" borderRadius="lg" boxShadow="xl" mt="250px" textAlign="center" minW="400px" >
+                <Flex direction='column' alignItems='center'>
+                    <Center>
+                        <FormLabel fontSize="30px">Crear un Grupo</FormLabel>
+                    </Center>
+                    <Center mt="20px">
+                        <Input type="text" id="NombreGrupo" placeholder="Nombre del Grupo" bg='white' color='black' width='300px' />
+                    </Center>
+                    <Center>
+                        <FormLabel fontSize="14px" mt="20px">La clave de tu grupo es {nuevoCodigo}, debes anotarlo porque sera la unica vez que podras verlo en la plataforma</FormLabel>
+                    </Center>
+                    <Center>
+                        <Button mt="30px" ml="50px" mr="50px" colorScheme="teal" width="100px" bg= "#3c3c3c" _hover={{ bg: "#ffffff", color:"#000000" }} onClick={onClose} >Cancelar</Button>
+                        <Button mt="30px" ml="50px" mr="50px" colorScheme="teal" width="100px" bg= "#3c3c3c" _hover={{ bg: "#ffffff", color:"#000000" }} onClick={onClose} >Crear</Button>
+                    </Center>
+                </Flex>
+                </Box>
+            </Center>
+            )
+        });
+    }
+    
+    function handleCrearoUnirseGrupo() {
+        toast.closeAll(); // Cierra cualquier toast abierto antes de mostrar uno nuevo
+        toast({ duration: null, isClosable: true, position: 'top',
+            render: ({ onClose }) => (
+            <Center>
+                <Box p="20" bg="#4A0000" color="white" fontSize="xl" borderRadius="lg" boxShadow="xl" mt="250px" textAlign="center" minW="400px" >
+                <Flex direction='column' alignItems='center'>
+                    <Center>
+                        <FormLabel fontSize="30px">Selecciona una opcion</FormLabel>
+                    </Center>
+                    <Center mt="20px">
+                        <Button fontSize="30px" ml="50px" mr="50px" colorScheme="teal" width="200px" height="100px" bg= "#3c3c3c" _hover={{ bg: "#ffffff", color:"#000000" }} onClick={CrearGrupo} >Crear Grupo</Button>
+                        <Button fontSize="30px" mr="50px" colorScheme="teal" width="200px" height="100px" bg= "#3c3c3c" _hover={{ bg: "#ffffff", color:"#000000" }} onClick={onClose} >Añadir Grupo</Button>
+                    </Center>
+                    <Center>
+                        <Button mt="30px" ml="50px" mr="50px" colorScheme="teal" width="100px" bg= "#3c3c3c" _hover={{ bg: "#ffffff", color:"#000000" }} onClick={onClose} >Cancelar</Button>
+                    </Center>
+                </Flex>
+                </Box>
+            </Center>
+            )
+        });
+    }
+
     
     return (
     <>
@@ -38,7 +96,7 @@ export function SubPantallaGrupos() {
                 </Box>
             ))}
             <Box padding='10px'>
-                <Button width='100px' height='100px' bgColor='#4A0000'  _hover={{ bg: "#3c3c3c" }} color='white' variant='solid' fontSize='40px'>+</Button>
+                <Button width='100px' height='100px' bgColor='#4A0000'  _hover={{ bg: "#3c3c3c" }} color='white' variant='solid' fontSize='40px' onClick={handleCrearoUnirseGrupo}>+</Button>
             </Box>
         </HStack>
     </>)

@@ -19,6 +19,7 @@ export function App() {
         <Route path="/PantallaRecuperarC" element={<PantallaRecuperarC />} />
         <Route path="/PantallaCambiarC" element={<PantallaCambiarC />} />
         
+        
         <Route path="/PantallaPrincipal" element={<PantallaPrincipal />} />
         <Route path="/SubPantallaGrupos" element={<SubPantallaGrupos />} />
         <Route path="/PantallaEditarPerfil" element={<PantallaEditarPerfil />} />

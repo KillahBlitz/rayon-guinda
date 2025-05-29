@@ -2815,23 +2815,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fach7\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Akeshi\\.nuget\\packages\\": {},
+    "D:\\Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\PruebasdeBackend.csproj",
+      "projectUniqueName": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\PruebasdeBackend.csproj",
       "projectName": "PruebasdeBackend",
-      "projectPath": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\PruebasdeBackend.csproj",
-      "packagesPath": "C:\\Users\\fach7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\obj\\",
+      "projectPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\PruebasdeBackend.csproj",
+      "packagesPath": "C:\\Users\\Akeshi\\.nuget\\packages\\",
+      "outputPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\PruebasdeBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\fach7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Akeshi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2840,15 +2840,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj": {
-              "projectPath": "C:\\Users\\fach7\\OneDrive\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj"
+            "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj": {
+              "projectPath": "D:\\Windows 64\\Documentos\\GitHub\\rayon-guinda\\BackEnd\\RayonGuinda\\RayonGuinda\\RayonGuinda.csproj"
             }
           }
         }
@@ -2863,7 +2862,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -2884,7 +2883,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

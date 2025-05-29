@@ -18,6 +18,7 @@ export function PantallaPrincipal(){
     function irAPerfil(){
         navigate(`/PantallaEditarPerfil?id=${idUsuario}`);
     }
+
     function AbrirGrupos(){
         setGrupos(<SubPantallaGrupos/>);
     }

@@ -13,7 +13,6 @@ export function PantallaEditarPerfil() {
 
     //variables vizuales para el toast y el input de la contraseña
     const toast = useToast();
-    const [passwordInput, setPasswordInput] = useState('');
     const inputRef = useRef(null);
 
     // Recuperar los datos del usuario al cargar el componente
@@ -31,41 +30,41 @@ export function PantallaEditarPerfil() {
                 });
             })}, [idUsuario]);
 
-    //funcion que al dar clicl al boton modificar, aparezca un mensaje de alerta en medio de la pantalla que te pida la contraseña
+
+    //funcion que al dar click al boton modificar, aparezca un mensaje de alerta en medio de la pantalla que te pida la contraseña
     function ConfirmarIdentidad(){
-        //if(!toast.isActive(toast)){
-            toast({ duration: null, isClosable: true, position: 'top',
-                render: ({ onClose }) => (
-                    <Center>
-                        <Box p="20" bg="#4A0000" color="white" fontSize="xl" borderRadius="lg" boxShadow="xl" mt="250px" textAlign="center" minW="400px" >
-                        <Flex direction='column' alignItems='center'>
-                            <Center>
-                                <FormLabel fontSize="30px">Ingresa tu contraseña</FormLabel>
-                            </Center>
-                            <Center mt="20px">
-                                <Input type="password" id="ConfirmPassword" ref={inputRef} placeholder="Contraseña" bg='white' color='black' width='300px' onChange={event => setPasswordInput(event.target.value)} />
-                            </Center>
-                            <Center>
-                                <Button mt="30px" mr="50px" colorScheme="teal" width="100px" bg= "#3c3c3c" _hover={{ bg: "#6d3535" }} onClick={onClose} >Cancelar</Button>
-                                <Button mt="30px" ml="50px" colorScheme="teal" width="100px" bg= "#3c3c3c"  _hover={{ bg: "#6d3535" }} onClick={validarContrasena} >Enviar</Button>
-                            </Center>
-                        </Flex>
-                        </Box>
-                    </Center>
-                )
-            });
-        //}
+        toast.closeAll(); // Cierra cualquier toast abierto antes de mostrar uno nuevo
+        toast({ duration: null, isClosable: true, position: 'top',
+            render: ({ onClose }) => (
+                <Center>
+                    <Box p="20" bg="#4A0000" color="white" fontSize="xl" borderRadius="lg" boxShadow="xl" mt="150px" textAlign="center" minW="400px" >
+                    <Flex direction='column' alignItems='center'>
+                        <Center>
+                            <FormLabel fontSize="30px">Ingresa tu contraseña</FormLabel>
+                        </Center>
+                        <Center mt="20px">
+                            <Input type="password" id="ConfirmPassword" ref={inputRef} placeholder="Contraseña" bg='white' color='black' width='300px' />
+                        </Center>
+                        <Center>
+                            <Button mt="30px" mr="50px" colorScheme="teal" width="100px" bg= "#3c3c3c" _hover={{ bg: "#6d3535" }} onClick={onClose} >Cancelar</Button>
+                            <Button mt="30px" ml="50px" colorScheme="teal" width="100px" bg= "#3c3c3c"  _hover={{ bg: "#6d3535" }} onClick={validarContrasena} >Enviar</Button>
+                        </Center>
+                    </Flex>
+                    </Box>
+                </Center>
+            )
+        });
     }
     
     //Funcion que valida la contraseña
     function validarContrasena(){
-        if(passwordInput === usuario.Password){
-            toast.closeAll();
+        toast.closeAll();
+        const inputRefValue = inputRef.current.value; // Obtener el valor del input de contraseña
+        if(inputRefValue === usuario.Password){
             navigate(`/PantallaModificadoraDatos?id=${idUsuario}`);
         }else{
             return(
-                toast.closeAll(),
-                toast({ duration: 1000, isClosable: true, position: 'top',
+                toast({ duration: 3000, isClosable: true, position: 'top',
                     render: () => (
                         <Alert status='error' variant='solid' width='300px' borderRadius='md'>
                             <Box color='white'>
@@ -80,6 +79,7 @@ export function PantallaEditarPerfil() {
 
 
     function volver(){
+        toast.closeAll();
         navigate(`/PantallaPrincipal?id=${idUsuario}`);
     }
 
