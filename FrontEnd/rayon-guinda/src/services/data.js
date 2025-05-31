@@ -81,3 +81,16 @@ export function RecuperarCodigoGrupo(){
         method: 'GET'
     }).then(response => response.text());
 }
+
+//funcion para crear un grupo
+export function CrearGrupo(AdminID, GrupoName, Codigo) {
+    let data = { AdminID: AdminID, NombreGrupo: GrupoName, ClaveAcceso: Codigo };
+    
+    return fetch(URL+'creargrupo', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    }).then(data => data.json());
+}

@@ -7,7 +7,7 @@ public partial class GrupoModel
 {
     public int GrupoId { get; set; }
 
-    public string Administrador { get; set; } = null!;
+    public int AdminID { get; set; }
 
     public string NombreGrupo { get; set; } = null!;
 

@@ -86,22 +86,10 @@ export function PantallaModificadoraDatos() {
         API.ModificarUsuario(usuario)
             .then(response => {
                 if (response === true) {
-                    toast({
-                        title: "Datos modificados correctamente",
-                        status: "success",
-                        duration: 3000,
-                        isClosable: true,
-                        position: "top"
-                    });
+                    toast({ title: "Datos modificados correctamente", status: "success", duration: 3000, isClosable: true, position: "top" });
                     navigate(`/PantallaEditarPerfil?id=${idUsuario}`);
                 } else {
-                    toast({
-                        title: "Error Inesperado",
-                        status: "error",
-                        duration: 3000,
-                        isClosable: true,
-                        position: "top"
-                    });
+                    toast({ title: "Error Inesperado", status: "error", duration: 3000, isClosable: true, position: "top" });
                 }
             })
             .catch(() => {

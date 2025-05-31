@@ -34,6 +34,54 @@
         }
       }
     },
+    "/api/creargrupo": {
+      "post": {
+        "tags": [
+          "Grupo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GrupoModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/registro": {
       "post": {
         "tags": [
@@ -527,9 +575,9 @@
             "type": "integer",
             "format": "int32"
           },
-          "administrador": {
-            "type": "string",
-            "nullable": true
+          "adminID": {
+            "type": "integer",
+            "format": "int32"
           },
           "nombreGrupo": {
             "type": "string",

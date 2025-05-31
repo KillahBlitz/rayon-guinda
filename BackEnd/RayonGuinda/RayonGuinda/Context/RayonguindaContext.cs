@@ -171,7 +171,7 @@ public partial class RayonguindaContext : DbContext
             entity.ToTable("Grupo");
 
             entity.Property(e => e.GrupoId).HasColumnName("Grupo_ID");
-            entity.Property(e => e.Administrador)
+            entity.Property(e => e.AdminID)
                 .HasMaxLength(255)
                 .IsUnicode(false);
             entity.Property(e => e.ClaveAcceso)

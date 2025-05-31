@@ -9,7 +9,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        ObtenerGruposPorUsuarioId();
+        CrearGrupo();
     }
     static void AltaUsuario()
     {
@@ -231,6 +231,36 @@ class Program
         else
         {
             Console.WriteLine("No se encontraron grupos para este usuario.");
+        }
+    }
+
+    //funcion para crear un grupo
+    static void CrearGrupo()
+    {
+        try
+        {
+            Console.WriteLine("=== Crear Grupo ===");
+            Console.Write("ID del Administrador: ");
+            int adminId = int.Parse(Console.ReadLine());
+            Console.Write("Nombre del Grupo: ");
+            string nombreGrupo = Console.ReadLine();
+            Console.Write("Clave de Acceso: ");
+            string claveAcceso = Console.ReadLine();
+            var grupo = new GrupoModel
+            {
+                AdminID = adminId,
+                NombreGrupo = nombreGrupo,
+                ClaveAcceso = claveAcceso,
+                NumIntegrantes = 1 // Inicializamos el numero de integrantes en 1
+            };
+            using var context = new RayonguindaContext();
+            context.Grupos.Add(grupo);
+            context.SaveChanges();
+            Console.WriteLine("Grupo creado correctamente.");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine($"Error al crear grupo: {e.Message}");
         }
     }
 }

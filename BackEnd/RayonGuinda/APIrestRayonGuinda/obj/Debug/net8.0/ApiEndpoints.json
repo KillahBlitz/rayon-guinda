@@ -46,6 +46,32 @@
     ]
   },
   {
+    "ContainingType": "APIrestRayonGuinda.Controllers.GrupoController",
+    "Method": "CrearGrupo",
+    "RelativePath": "api/creargrupo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "grupo",
+        "Type": "RayonGuinda.Models.GrupoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "APIrestRayonGuinda.Controllers.UsuarioController",
     "Method": "getid",
     "RelativePath": "api/getid",
